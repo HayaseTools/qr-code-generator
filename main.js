@@ -128,6 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Clear main canvas
         ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
+        
+        // Ensure sharp QR dots (Disable smoothing)
+        ctx.imageSmoothingEnabled = false;
 
         // 1. Draw Background (Solid Color or Image)
         if (bgImg) {
@@ -148,7 +151,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 3. Draw Logo (On top of everything)
         if (logoImg) {
-            const logoSize = CANVAS_SIZE * 0.22;
+            ctx.imageSmoothingEnabled = true; // Re-enable for smooth logo
+            const logoSize = CANVAS_SIZE * 0.18; // Reduced from 0.22 to 0.18 for readability
             const lx = (CANVAS_SIZE - logoSize) / 2;
             const ly = (CANVAS_SIZE - logoSize) / 2;
             ctx.drawImage(logoImg, lx, ly, logoSize, logoSize);
