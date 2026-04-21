@@ -52,9 +52,18 @@
     </div>
     <div class="shimmer-layer" id="shimmer-layer"></div>
 
-    <div class="ad-banner top-ad">
-        <div class="ad-content">スポンサーリンク (Google AdSense 2)</div>
-    </div>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Quick QR</a>
+            <div class="nav-links">
+                <a href="#about">活用アイデア</a>
+                <a href="#faq">よくある質問</a>
+                <a href="contact.html">お問い合わせ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Ads removed for approval -->
 
     <main class="container">
         <header class="app-header">
@@ -143,32 +152,56 @@
             </div>
         </section>
 
-        <!-- 機能解説セクション (SEO対策・ユーザー親切設計) -->
-        <section class="card info-card">
-            <h2>Quick QR が選ばれる理由</h2>
+        <!-- 親しみやすい機能解説＆活用セクション -->
+        <section id="about" class="card info-card friendly-content">
+            <h2>✨ Quick QRなら、あっという間に完成！</h2>
+            <p>スマホで読み取れるあの「QRコード」、実は自分でもカンタンに作れるってご存知でしたか？<br>例えばお店のメニュー表、フリマアプリでの商品紹介、Wi-Fiの共有など、色々な場面で大活躍します。</p>
+            
+            <div class="ideas-grid">
+                <div class="idea-item">
+                    <h4>📱 お店のチラシや名刺に</h4>
+                    <p>ホームページやSNSのURLをQRコードにして名刺にポン！文字を入力する手間が省けるので、たくさんの方に見てもらえます。</p>
+                </div>
+                <div class="idea-item">
+                    <h4>🎁 サプライズのメッセージ</h4>
+                    <p>URLだけでなく「ありがとう！」のような文章もQRコードにできます。手紙の端っこに印刷して、ちょっとしたサプライズにいかがですか？</p>
+                </div>
+            </div>
+
+            <h3 class="margin-top-lg">🔒 安心・安全のヒミツ</h3>
             <ul class="feature-list">
                 <li>
                     <div class="check-icon">✓</div>
                     <div class="feature-text">
-                        <strong>ローカル完結で安全</strong>
-                        <span>データは一切サーバーへ送信されず、お使いのブラウザ内だけで処理されるため、機密情報のURLでも安心してQRコード化できます。</span>
+                        <strong>スマホの中だけで動くから安全</strong>
+                        <span>皆さまが入力したURLや秘密の文章は、インターネット上のサーバーへ送られることなく、皆さまの画面（ブラウザ）の中だけで画像を生成しています。だから情報漏えいの心配がありません。</span>
                     </div>
                 </li>
                 <li>
                     <div class="check-icon">✓</div>
                     <div class="feature-text">
-                        <strong>自由自在なカスタマイズ</strong>
-                        <span>背景画像の透明度調整やロゴの追加、以前のような鮮やかな紫テーマなど、プレミアムなデザインを思い通りに作成可能です。</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="check-icon">✓</div>
-                    <div class="feature-text">
-                        <strong>プロ品質の書き出し</strong>
-                        <span>透過背景（PNG）に対応しており、チラシやWebサイトのデザイン素材としてそのまま活用できる高品質な画像を提供します。</span>
+                        <strong>ロゴを入れてオリジナルデザイン</strong>
+                        <span>お店のロゴを入れたり、背景画像を透かしたりして、世界に一つだけのかわいい・カッコいいQRコードを思い通りに作れます。</span>
                     </div>
                 </li>
             </ul>
+        </section>
+
+        <!-- FAQセクション -->
+        <section id="faq" class="card info-card friendly-content">
+            <h2>❓ よくあるご質問 (FAQ)</h2>
+            <div class="faq-item">
+                <h4>Q. パソコンとスマホ、どちらでも使えますか？</h4>
+                <p>A. はい！どちらからでもご利用いただけます。お店のチラシ作りのときはパソコンで、サクッとURLを共有したい時はスマホで、といった使い分けが便利です。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q. お店のポスターに使いたいですが、商用利用は無料ですか？</h4>
+                <p>A. もちろんです！個人の趣味でも、お仕事の広告や商品パッケージでも、完全無料で自由にお使いいただけます（クレジット表記も不要です）。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q. 真ん中にロゴを入れたら、読み取れなくなってしまいました…</h4>
+                <p>A. ロゴが大きすぎると、カメラがQRコードだと認識できなくなってしまいます。<br>そんな時は「QRコードの色を濃くする」「背景とのコントラストを強くする」か、ロゴのサイズを少し小さくして試してみてくださいね。</p>
+            </div>
         </section>
     </main>
 
@@ -176,34 +209,15 @@
         <div class="footer-content">
             <p>&copy; 2026 Quick QR. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#privacy-policy" id="policy-trigger">プライバシーポリシー</a>
+                <a href="index.html">ホーム</a>
+                <a href="privacy-policy.html">プライバシーポリシー</a>
+                <a href="terms.html">利用規約</a>
+                <a href="contact.html">お問い合わせ</a>
             </div>
         </div>
     </footer>
 
-    <!-- Privacy Policy Modal (Simple CSS-based modal) -->
-    <div id="privacy-policy" class="modal-overlay">
-        <div class="modal-content">
-            <a href="#" class="close-modal">&times;</a>
-            <h2>プライバシーポリシー</h2>
-            <div class="policy-body">
-                <h3>1. データの取り扱い</h3>
-                <p>本ツールで生成する全てのデータ（入力されたテキスト、アップロードされた画像）は、お客様のブラウザ内でのみ処理されます。外部サーバーへの送信は一切行われません。</p>
-                <h3>2. アクセス解析・広告について</h3>
-                <p>当サイトではサービス向上のため、Google Analyticsを使用しています。また、広告配信のためにGoogle AdSenseを利用しています。これらはCookieを使用してデータを収集しますが、個人を特定する情報は含まれません。</p>
-                <h3>3. 免責事項</h3>
-                <p>本ツールを利用したことによるいかなる損害についても、当サイトは一切の責任を負いません。</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Ad Banners (Bottom 1 & 2) -->
-    <div class="ad-banner bottom-ad">
-        <div class="ad-content">スポンサーリンク (Google AdSense 3)</div>
-    </div>
-    <div class="ad-banner bottom-ad">
-        <div class="ad-content">スポンサーリンク (Google AdSense 4)</div>
-    </div>
+    <!-- Ads removed for approval -->
 
     <script src="main.js"></script>
 </body>
